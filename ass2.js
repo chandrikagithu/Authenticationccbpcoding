@@ -10,7 +10,6 @@ app.use(express.json());
 
 const uri = `mongodb+srv://${process.env.DB_USER_ID}:${process.env.DB_PASSWORD}@cluster0.m4rht.mongodb.net/myFirstDatabase?retryWrites=true&w=majority`;
 
-// console.log(uri);
 // create new mongo clients
 const client = new MongoClient(uri);
 
